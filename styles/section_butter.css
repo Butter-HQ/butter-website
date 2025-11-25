@@ -1,0 +1,28 @@
+@media screen and (max-width: 48rem) { 
+
+#section_butter {
+    width: 100%;
+    height: auto;
+    display: block;
+    text-align: center;
+    height: 20rem;
+
+}
+
+#section_butter_inner {
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+#section_butter_header {
+    max-width: 30ch;
+    font-size: 2.2rem;
+    margin: 0 auto;
+    margin-bottom: 5%;
+}
+
+#butter_section_btn {
+    margin: 0 auto;
+}
+
+}

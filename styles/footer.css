@@ -1,0 +1,9 @@
+@media screen and (max-width: 48rem) { 
+
+#footer {
+    max-width: 100vw;
+    height: 20rem;
+    background-color: grey;
+}
+
+}

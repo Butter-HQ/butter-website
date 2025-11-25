@@ -1,0 +1,82 @@
+
+#btr_image_nav:hover {
+    animation-name: spinning_butter;
+    animation-duration: 1.5s;
+}
+
+@keyframes spinning_butter {
+  100% {
+  transform:  rotate3d(0, 1, 0, 360deg);
+  }
+}
+
+.nav_main {
+    font-size: 0.64rem;
+}
+
+
+
+@media screen and (max-width: 48rem) { 
+
+.nav_main {
+  top: 0;
+  position: sticky; 
+  width: 100%;
+  z-index: 1000;                    /* stays above all content */
+  min-height: 5rem;
+  /* background-color: var(--bg_white); */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 1rem 0;                 /* same internal spacing */
+  margin: 0;
+  max-width: 100%;
+background: #52ffba;
+background: linear-gradient(90deg,rgba(82, 255, 186, 1) 0%, rgba(101, 150, 145, 1) 50%, rgba(153, 228, 232, 1) 100%);
+}
+
+    img {
+        width: 2rem;
+        height: 2rem;
+        margin: 0 auto;
+        display: block;
+    }
+
+    #nav_top_stuff {
+        margin: 0 auto;
+        margin-right: auto;
+        display: flex;
+        gap: 0.19rem;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    #nav_top_stuff a {
+        display: flex;
+        align-items: center;
+        padding: 0.2rem; /* adjust as needed */
+    }    
+
+    #bottom_stuff_from_nav {
+        display: flex;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+        gap: 2.8rem;
+        flex-wrap: wrap;
+    }
+
+
+    #content {
+     position: absolute;
+     background-color: gray;
+    }
+
+    #a2 {
+        padding: 0.6rem;
+    }
+
+}
