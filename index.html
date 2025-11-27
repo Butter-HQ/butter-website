@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="./styles/general_stuff.css">
     <link rel="stylesheet" href="./styles/nav.css">
     <link rel="stylesheet" href="./styles/section_lovable.css">
+    <link rel="stylesheet" href="./styles/moon.css">
     <link rel="stylesheet" href="./styles/section_smarter.css">
     <link rel="stylesheet" href="./styles/section_yours.css">
     <link rel="stylesheet" href="./styles/section_dont.css">
@@ -13,18 +14,20 @@
     <link rel="stylesheet" href="./styles/section_six.css">
     <link rel="stylesheet" href="./styles/section_butter.css">
     <link rel="stylesheet" href="./styles/footer.css">
-    <link rel="stylesheet" href="./styles/moon.css">
+    <script src="world.js" defer></script>
 </head>
 
 <body>
+  
     <nav class="nav_main">
+      <section id="nav_desktop">
     <div id="nav_top_stuff">
       <a><img src="./listOfImages/butter_clear.png" id="btr_image_nav"></a>
       <div id="dropdown">
       <a>Product▾</a>
       <div id="content">
-        <a>None</a>
-        <a>None</a>
+        <a>Null</a>
+        <a>Null</a>
         <a>Null</a>
       </div>
       </div>
@@ -58,15 +61,33 @@
       </div>
     <div id="bottom_stuff_from_nav">
       <a class="a2">Request a Demo</a>
+
       <a id="nav_butter_free_btn" class="get_butter_free_btn">Get Butter Free</a>
     </div>
+         <a><img src="./listOfImages/butter_clear.png" id="btr_image_mobile_nav"></a>
+              <div id="nav_mobile_right_content">
+         <a id="nav_mobile_butter_free_btn" class="get_butter_free_btn">Get Butter Free</a>
+        <img id="hamburger-icon" src="/listOfImages/icons8-hamburger-menu-50.png">
+              </div>
+      </section>
+
+    <section id="hamburger-menu">
+      <span id="x">X</span>
+      <div id="menu-list">
+    <h1 id="menu-item">Product</h1>
+    <h1 id="menu-item">Download</h1>
+    <h1 id="menu-item">Solutions</h1>
+    <h1 id="menu-item">Resources</h1>
+    <h1 id="menu-item">Pricing</h1>
+    </div>
+   </section>
   </nav>
   
   <section id="section_lovable">
 
-
     <h1 id="section_lovable_header">The Worlds Most Lovable Keyboard</h1>
-
+    <input type="text" placeholder="Enter Email here" id="email">
+ </input>
 <div id="moon">
 <div class="framer-wGF1H framer-pmg2x0" style="min-height:10vh;width:auto">
   <div class="framer-eu0l83" data-border="true" data-framer-name="Hero" name="Hero">
@@ -82,7 +103,6 @@
   </div>
 </div>
 </div>
-
 
 
     <p id="section_lovable_text">Butter is the most customizable

@@ -9,7 +9,7 @@
 
 
  .get_butter_free_btn:hover {
-        background-color: #32A2F6;
+        background-color: #8EC6FF /*#32A2F6; */
 }
 
 
@@ -18,13 +18,18 @@
         padding: 0.6rem;
         color: var(--bg_white);
         background-color: black;
+        cursor: pointer;
+        font-size: 0.67rem;
 }
+
+
 
 
 @media (prefers-color-scheme: dark) {
 body {
  background-color:  var(--bg_black);
  color: var(--bg_white);
+font-family: 'Inter', Arial, sans-serif;
 }
 
 
@@ -67,7 +72,7 @@ body {
 
 
     .get_butter_free_btn:active {
-        background-color: #32A2F6;
+         background-color: #8EC6FF /*#32A2F6; */
     }
 
 }
