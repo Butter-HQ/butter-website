@@ -8,8 +8,8 @@
 }
 
 
- .get_butter_free_btn:hover {
-        background-color: #8EC6FF /*#32A2F6; */
+ .get_butter_free_btn:hover, #enterBtn:hover {
+        background-color: #8EC6FF; /*#32A2F6; */
 }
 
 
@@ -17,9 +17,10 @@
         border-radius: 0.5rem;
         padding: 0.6rem;
         color: var(--bg_white);
-        background-color: black;
+        background-color: --bg_black;
         cursor: pointer;
         font-size: 0.67rem;
+
 }
 
 
@@ -77,12 +78,9 @@ font-family: 'Inter', Arial, sans-serif;
 
 }
 
-
-
-    @keyframes slide {
+@keyframes slide {
 	0% {transform:translateX(-100%);}
 	100% {transform:translateX(100%);}
-
 }
 
 

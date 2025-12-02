@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="./styles/section_six.css">
     <link rel="stylesheet" href="./styles/section_butter.css">
     <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/glow.css">
     <script src="world.js" defer></script>
 </head>
 
@@ -22,9 +23,9 @@
     <nav class="nav_main">
       <section id="nav_desktop">
     <div id="nav_top_stuff">
-      <a><img src="./listOfImages/butter_clear.png" id="btr_image_nav"></a>
+      <a><img src="./listOfImages/butter.png" id="btr_image_nav"></a>
       <div id="dropdown">
-      <a>Product▾</a>
+      <a class="nav_item">Product▾</a>
       <div id="content">
         <a>Null</a>
         <a>Null</a>
@@ -32,7 +33,7 @@
       </div>
       </div>
       <div id="dropdown">
-      <a>Download▾</a>
+      <a class="nav_item">Download▾</a>
       <div id="content">
         <a>None</a>
         <a>None</a>
@@ -40,7 +41,7 @@
       </div>
       </div>     
       <div id="dropdown">
-      <a>Solutions▾</a>
+      <a class="nav_item">Solutions▾</a>
       <div id="content">
         <a>None</a>
         <a>None</a>
@@ -48,7 +49,7 @@
       </div>
       </div>
       <div id="dropdown">
-      <a>Resources▾</a>
+      <a class="nav_item">Resources▾</a>
       <div id="content">
         <a>None</a>
         <a>None</a>
@@ -56,15 +57,14 @@
       </div>
       </div>
       <div id="pricing">
-      <a>Pricing</a>
+      <a class="nav_item">Pricing</a>
       </div>
       </div>
     <div id="bottom_stuff_from_nav">
-      <a class="a2">Request a Demo</a>
-
+      <a class="a2 nav_item">Request a Demo</a>
       <a id="nav_butter_free_btn" class="get_butter_free_btn">Get Butter Free</a>
     </div>
-         <a><img src="./listOfImages/butter_clear.png" id="btr_image_mobile_nav"></a>
+         <a><img src="./listOfImages/butter.png" id="btr_image_mobile_nav"></a>
               <div id="nav_mobile_right_content">
          <a id="nav_mobile_butter_free_btn" class="get_butter_free_btn">Get Butter Free</a>
         <img id="hamburger-icon" src="/listOfImages/icons8-hamburger-menu-50.png">
@@ -85,9 +85,21 @@
   
   <section id="section_lovable">
 
+    <div id="section_lovable_video">
+    <video id="glass_butter" loop autoplay muted> 
+      <source src="listOfVideos/INSANE-LiquidGlass-Butter.mp4" type="video/mp4"/>
+    </video>
+    </div>
+
     <h1 id="section_lovable_header">The Worlds Most Lovable Keyboard</h1>
-    <input type="text" placeholder="Enter Email here" id="email">
- </input>
+
+    <div id="parent_wrapper">
+    <div class="wrapper">
+  <input type="text" placeholder="Enter Email here" id="email">
+    <button id="enterBtn">Enter</button>
+</div>
+</div>
+<!-- </div> -->
 <div id="moon">
 <div class="framer-wGF1H framer-pmg2x0" style="min-height:10vh;width:auto">
   <div class="framer-eu0l83" data-border="true" data-framer-name="Hero" name="Hero">
@@ -108,7 +120,7 @@
     <p id="section_lovable_text">Butter is the most customizable
       iPhone keyboard. Now with our proprietary AI Autocorrect :)
     </p>
-    <a class="get_butter_free_btn" id="free_btn">Get Butter Free -></a>
+    <a class="get_butter_free_btn" id="free_btn">Get Butter Free <span style='font-size:1rem;'>&#8594;</span></a>
     <img id="section_lovable_image" src="listOfImages/Rotato Image 27DB.png">
   </section>
   <section id="section_smarter">
@@ -136,9 +148,26 @@
   <section id="section_butter">
     <div id="section_butter_inner">
     <h1 id="section_butter_header">We Make Keyboards<br> We make them <br> much Butter</h1>
-    <a class="get_butter_free_btn" id="butter_section_btn">Get Butter Free -></a>
+    <a class="get_butter_free_btn" id="butter_section_btn">Get Butter Free <span style='font-size:1rem;'>&#8594;</span></a>
     </div>  
   </section>
-  <div id="footer">Footer: Nothing here</section>
+  <section id="main-footer">
+  <div id="footer">
+    <div id="pairOne">
+    <div id="footerOne">
+    </div>
+     <div id="footerTwo">
+    </div>
+    </div>
+    <div id="pairTwo">
+     <div id="footerThree">
+    </div>
+     <div id="footerFour">
+    </div>
+    </div>
+      <div id="footerFive">
+    </div>
+    </div>
+  </section>
 </body>
 </html>
