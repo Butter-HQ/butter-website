@@ -3,27 +3,24 @@
     --bg_white: white;
 }
 
-.nav_main {
-    background-color: var(--bg_white);
-}
-
-
  .get_butter_free_btn:hover, #enterBtn:hover {
         background-color: #8EC6FF; /*#32A2F6; */
 }
 
 
+
 .get_butter_free_btn {
         border-radius: 0.5rem;
         padding: 0.6rem;
-        color: var(--bg_white);
-        background-color: --bg_black;
+        background-color: var(--bg_black);
+        color: white;
         cursor: pointer;
-        font-size: 0.67rem;
-
+        font-size: 0.87rem;
 }
 
-
+#parent_wrapper {
+    margin-bottom: 12%;
+}
 
 
 @media (prefers-color-scheme: dark) {
@@ -33,6 +30,9 @@ body {
 font-family: 'Inter', Arial, sans-serif;
 }
 
+#parent_wrapper {
+    margin-bottom: 0%;
+}
 
 .nav_main, #nav_top_stuff {
   /* background-color: var(--bg_black); */
@@ -50,7 +50,6 @@ font-family: 'Inter', Arial, sans-serif;
         color:  var(--bg_black);
         background-color: var(--bg_white);
         border: none;     
-        font-size: 0.67rem;
    }
 }
 
@@ -82,5 +81,6 @@ font-family: 'Inter', Arial, sans-serif;
 	0% {transform:translateX(-100%);}
 	100% {transform:translateX(100%);}
 }
+
 
 

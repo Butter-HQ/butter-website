@@ -11,7 +11,7 @@ function showMenu() {
 
 function exit() {
     menu.style.transform = "translate(100%)"
-    menu.addEventListener('transitionend', hideMenu)
+    menu.addEventListener('transitionend', hideMenu);
 }
 
 function hideMenu() {
