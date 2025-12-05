@@ -9,6 +9,8 @@
     justify-content: center;
 }
 
+
+
 #section_lovable {
         width: 100%;
         height: auto;
@@ -28,12 +30,14 @@
 
 @media screen and (max-width: 48rem) { 
    
-
 .wrapper {
   position: relative;
   width: 17rem;     /* controls total width */
-  height: 3rem;     /* controls total height */
   margin-top: 7%;
+}
+
+form {
+     height: 3rem;  
 }
 
 #email {
