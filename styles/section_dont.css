@@ -1,15 +1,15 @@
-@media screen and (max-width: 48rem) {
 
-  #section_dont {
+ #section_dont {
     width: 100%;
     margin: 0 auto;
     display: block;
   }
 
+
   #section_dont_header {
     padding-top: 10%;
     max-width: 19ch;
-    font-size: 1.65rem;
+    font-size: var(--header_clamp);
     margin: 0 auto;
     text-align: center;
   }
@@ -27,6 +27,14 @@
     height: 100%;
     object-fit: cover;    /* hero-image behavior */
     display: block;       /* removes inline gap issues */
+  }
+
+
+
+@media screen and (max-width: 48rem) {
+
+  #section_dont_header {
+    font-size: 1.65rem;
   }
 
 }

@@ -76,7 +76,7 @@
 }
 
 .framer-wGF1H .framer-11253p8 {
-  background-color: var(--token-0a0787f4-acc7-4c77-bc44-5077db5742f9, #0a0a0a);
+  background-color: #090909; /* var(--token-0a0787f4-acc7-4c77-bc44-5077db5742f9, #0a0a0a); */
   bottom: -6.25rem; /* -100px */
   flex: none;
   height: 50rem; /* 800px */
@@ -94,6 +94,8 @@
     rgba(255, 255, 255, 0.5) 0%,
     rgba(10, 10, 10, 0) 100%
   );
+
+  /* #090909 */
   bottom: 16.5625rem; /* 265px */
   filter: blur(3.5625rem); /* 57px */
   flex: none;
@@ -118,7 +120,7 @@
 
 .framer-wGF1H .framer-ct3gpt {
   aspect-ratio: 2.346820809248555 / 1;
-  background-color: var(--token-0a0787f4-acc7-4c77-bc44-5077db5742f9, #0a0a0a);
+  background-color: #090909;/* background-color: var(--token-0a0787f4-acc7-4c77-bc44-5077db5742f9, #0a0a0a); */
   border-radius: 100%;
   bottom: -41.75rem; /* -668px */
   box-shadow: inset 0 0.125rem 1.25rem #fff, 0 -0.625rem 3.125rem 0.0625rem #ffffff7d;

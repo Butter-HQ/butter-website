@@ -1,12 +1,26 @@
 :root {
     --bg_black: #090909;
     --bg_white: white;
+    --header_clamp: clamp(2.6rem, 1.6rem + 2vw, 4.2rem);
 }
 
- .get_butter_free_btn:hover, #enterBtn:hover {
-        background-color: #8EC6FF; /*#32A2F6; */
-}
+/* html body #enterBtn:hover,
+html body .get_butter_free_btn:hover {
+    background-color: #8EC6FF !important;
+   
+} */
 
+
+
+body {
+        max-width: 100%;
+        font-family: 'Inter', Arial, sans-serif;
+        overflow-x: hidden;
+        margin: 0 auto;
+        padding: 0;
+        justify-content: center;
+        font-weight: bold;
+}
 
 
 .get_butter_free_btn {
@@ -21,6 +35,7 @@
 #parent_wrapper {
     margin-bottom: 12%;
 }
+
 
 
 @media (prefers-color-scheme: dark) {
@@ -51,28 +66,16 @@ font-family: 'Inter', Arial, sans-serif;
         background-color: var(--bg_white);
         border: none;     
    }
+
+ 
 }
 
 
 @media screen and (max-width: 48rem) { 
 
-    
-    body {
-        /* font-size: 0.7rem; */
-        max-width: 100%;
-        font-family: 'Inter', Arial, sans-serif;
-        overflow-x: hidden;
-        margin: 0 auto;
-        padding: 0;
-        font-weight: bold;
-        justify-content: center;
-    }
-
-    /* html { overflow-x: hidden; } */
-
 
     .get_butter_free_btn:active {
-         background-color: #8EC6FF /*#32A2F6; */
+         background-color: #8EC6FF; /*#32A2F6; */
     }
 
 }
@@ -83,4 +86,17 @@ font-family: 'Inter', Arial, sans-serif;
 }
 
 
+html body .get_butter_free_btn:hover,
+html body #enterBtn:hover {
+    background-color: #8EC6FF !important;
+    color: white;
+}
 
+html body .get_butter_free_btn:hover::after {
+    background-color: #8EC6FF !important;
+}
+
+
+html body .get_butter_free_btn:hover::before {
+    opacity: 1 !important; /* keep glow visible */
+}

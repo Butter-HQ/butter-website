@@ -21,6 +21,9 @@
     #section_lovable {
         margin-top: 7%;    
     }
+    #section_lovable_video {
+    display: flex;
+}
 }
 
 @media screen and (max-width: 48rem) { 
@@ -50,8 +53,8 @@
   width: 5rem;
   height: 3rem;  /* now matches wrapper height */
   border-radius: 1.30rem;
-  background-color: rgb(0, 0, 0);
-  color: white;
+  background-color: var(--bg_black);
+  color: var(--bg_white);
   border: solid 0.10rem;
   outline: none;
 }
