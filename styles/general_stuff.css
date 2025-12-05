@@ -1,32 +1,53 @@
 :root {
     --bg_black: #090909;
     --bg_white: white;
+    --header_clamp: clamp(2.6rem, 1.6rem + 2vw, 4.2rem);
 }
 
-.nav_main {
-    background-color: var(--bg_white);
-}
+/* html body #enterBtn:hover,
+html body .get_butter_free_btn:hover {
+    background-color: #8EC6FF !important;
+   
+} */
 
 
- .get_butter_free_btn:hover {
-        background-color: #32A2F6;
+
+body {
+        max-width: 100%;
+        font-family: 'Inter', Arial, sans-serif;
+        overflow-x: hidden;
+        margin: 0 auto;
+        padding: 0;
+        justify-content: center;
+        font-weight: bold;
 }
 
 
 .get_butter_free_btn {
         border-radius: 0.5rem;
         padding: 0.6rem;
-        color: var(--bg_white);
-        background-color: black;
+        background-color: var(--bg_black);
+        color: white;
+        cursor: pointer;
+        font-size: 0.87rem;
 }
+
+#parent_wrapper {
+    margin-bottom: 12%;
+}
+
 
 
 @media (prefers-color-scheme: dark) {
 body {
  background-color:  var(--bg_black);
  color: var(--bg_white);
+font-family: 'Inter', Arial, sans-serif;
 }
 
+#parent_wrapper {
+    margin-bottom: 0%;
+}
 
 .nav_main, #nav_top_stuff {
   /* background-color: var(--bg_black); */
@@ -44,40 +65,38 @@ body {
         color:  var(--bg_black);
         background-color: var(--bg_white);
         border: none;     
-        font-size: 0.67rem;
    }
+
+ 
 }
 
 
 @media screen and (max-width: 48rem) { 
 
-    
-    body {
-        /* font-size: 0.7rem; */
-        max-width: 100%;
-        font-family: 'Inter', Arial, sans-serif;
-        overflow-x: hidden;
-        margin: 0 auto;
-        padding: 0;
-        font-weight: bold;
-        justify-content: center;
-    }
-
-    /* html { overflow-x: hidden; } */
-
 
     .get_butter_free_btn:active {
-        background-color: #32A2F6;
+         background-color: #8EC6FF; /*#32A2F6; */
     }
 
 }
 
-
-
-    @keyframes slide {
+@keyframes slide {
 	0% {transform:translateX(-100%);}
 	100% {transform:translateX(100%);}
-
 }
 
 
+html body .get_butter_free_btn:hover,
+html body #enterBtn:hover {
+    background-color: #8EC6FF !important;
+    color: white;
+}
+
+html body .get_butter_free_btn:hover::after {
+    background-color: #8EC6FF !important;
+}
+
+
+html body .get_butter_free_btn:hover::before {
+    opacity: 1 !important; /* keep glow visible */
+}

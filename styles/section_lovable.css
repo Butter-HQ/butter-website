@@ -1,21 +1,73 @@
-/* @import "https://unpkg.com/open-props@1.6.17/easings.min.css";
- */
+#section_lovable_video {
+    display: none;
+}
 
-@media screen and (max-width: 48rem) { 
-   
-   #section_lovable {
+
+#parent_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+#section_lovable {
         width: 100%;
         height: auto;
         display: block;
         text-align: center;
-        margin-top: 10%;
+        margin-top: 40%;    
+}
+
+@media (prefers-color-scheme: dark) {
+    #section_lovable {
+        margin-top: 7%;    
     }
+    #section_lovable_video {
+    display: flex;
+}
+}
+
+@media screen and (max-width: 48rem) { 
+   
+.wrapper {
+  position: relative;
+  width: 17rem;     /* controls total width */
+  margin-top: 7%;
+}
+
+form {
+     height: 3rem;  
+}
+
+#email {
+  width: 100%;      /* fills wrapper */
+  height: 100%;     /* matches wrapper height */
+  padding-right: 3rem; /* makes space so text doesn't overlap button */
+  box-sizing: border-box;
+  border-radius: 1.30rem;
+  border-color: none;
+  border: none;
+  outline: none;
+}
+
+#enterBtn {
+  position: absolute;
+  right: 0;
+  width: 5rem;
+  height: 3rem;  /* now matches wrapper height */
+  border-radius: 1.30rem;
+  background-color: var(--bg_black);
+  color: var(--bg_white);
+  border: solid 0.10rem;
+  outline: none;
+}
 
     #section_lovable_header {
         font-size: 2.3rem;
         max-width: 17ch;
         margin: 0 auto;
-        padding-top: 10%;
+        /* padding-top: 16%; */
         text-align: center;
     }
 
@@ -31,6 +83,25 @@
         padding-top: 5%;
         width: 23rem;
         height: 23rem;
+        margin: 0 auto;
     }
 
+    @media (prefers-color-scheme: dark) {
+
+    #section_lovable_video {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #glass_butter {
+        width: 24rem;
+        height: 24rem;
+        margin: 0 auto;
+    }
+    }
+
+
 }
+
+

@@ -1,23 +1,40 @@
-@media screen and (max-width: 48rem) { 
 
-#section_dont {
-    display: block;
+ #section_dont {
+    width: 100%;
     margin: 0 auto;
-     width: 100%;
-}
+    display: block;
+  }
 
-#section_dont_header {
+
+  #section_dont_header {
     padding-top: 10%;
     max-width: 19ch;
-    font-size: 1.65rem;
+    font-size: var(--header_clamp);
     margin: 0 auto;
     text-align: center;
-}
+  }
 
-#section_dont_image {
-    padding-top: 2%;
-  width: 100%;
-    height: 11rem;
-}
+  #section_dont_image {
+    width: 100%;
+    aspect-ratio: 16 / 9; /* controls scaling correctly */
+    overflow: hidden;     /* prevents bleed on crop */
+    margin-top: 2%;       /* replaces padding-top for spacing */
+    height: 100%;
+  }
+
+  #section_dont_image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;    /* hero-image behavior */
+    display: block;       /* removes inline gap issues */
+  }
+
+
+
+@media screen and (max-width: 48rem) {
+
+  #section_dont_header {
+    font-size: 1.65rem;
+  }
 
 }
