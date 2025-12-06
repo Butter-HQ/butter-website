@@ -98,6 +98,7 @@ form {
         width: 24rem;
         height: 24rem;
         margin: 0 auto;
+        pointer-events: none;
     }
     }
 
