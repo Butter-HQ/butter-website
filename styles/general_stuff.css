@@ -4,11 +4,11 @@
     --header_clamp: clamp(2.6rem, 1.6rem + 2vw, 4.2rem);
 }
 
-/* html body #enterBtn:hover,
+ html body #enterBtn:hover,
 html body .get_butter_free_btn:hover {
     background-color: #8EC6FF !important;
    
-} */
+} 
 
 
 
@@ -73,14 +73,9 @@ font-family: 'Inter', Arial, sans-serif;
 
 @media screen and (max-width: 48rem) { 
 
-    @media screen and (max-width: 48rem) {
-    .get_butter_free_btn:active,
-    .get_butter_free_btn:active::after,
-    .get_butter_free_btn:active::before {
+  
+    .get_butter_free_btn:active {
       background-color: #8EC6FF !important;
-      color: white !important;
-      opacity: 1 !important;
-        }
     }
 
 }
@@ -105,3 +100,4 @@ html body .get_butter_free_btn:hover::after {
 html body .get_butter_free_btn:hover::before {
     opacity: 1 !important; /* keep glow visible */
 }
+

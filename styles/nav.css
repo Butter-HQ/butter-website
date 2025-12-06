@@ -4,6 +4,11 @@
     animation-duration: 1.5s;
 }
 
+.btr_image:active {
+    animation-name: spinning_butter;
+    animation-duration: 1.5s;
+}
+
 @keyframes spinning_butter {
   100% {
   transform:  rotate3d(0, 1, 0, 360deg);
@@ -122,16 +127,12 @@ img {
 }
 
 
-#nav_main, #nav_top_stuff {
-    color: var(--bg_white);
-}
-
-#nav_item {
+#nav_main, #nav_top_stuff, #nav_item {
     color: var(--bg_white);
 }
 
 
-@media screen and (max-width: 37.5rem) { 
+@media screen and (max-width: 48rem) { 
 
     #nav_mobile_right_content {
         display: flex;
@@ -199,22 +200,29 @@ img {
     width: 3rem;
 }
 
-
+/* 
 @media screen and (min-width: 37.5rem) and (max-width: 67rem) {
   #nav_desktop {
-    justify-content: center; /* stops space-between from pulling apart rows */
+    justify-content: center;  stops space-between from pulling apart rows 
   }
 
   #nav_top_stuff,
   #bottom_stuff_from_nav {
-    width: 100%;             /* allow each row to center cleanly */
+    width: 100%;             /allow each row to center cleanly 
     display: flex;
-    justify-content: center; /* horizontally center contents */
-    align-items: center;     /* vertical centering inside row */
+    justify-content: center;  horizontally center contents 
+    align-items: center;      vertical centering inside row 
     margin-left: 0%;
     margin-right: 0%;
   }
 
-}       
+}        */
 
 
+
+@media (prefers-color-scheme: dark) {
+    #btr_image_mobile_nav {
+         color: green;
+    }
+}
+ 
