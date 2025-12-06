@@ -73,9 +73,14 @@ font-family: 'Inter', Arial, sans-serif;
 
 @media screen and (max-width: 48rem) { 
 
-
-    .get_butter_free_btn:active {
-         background-color: #8EC6FF; /*#32A2F6; */
+    @media screen and (max-width: 48rem) {
+    .get_butter_free_btn:active,
+    .get_butter_free_btn:active::after,
+    .get_butter_free_btn:active::before {
+      background-color: #8EC6FF !important;
+      color: white !important;
+      opacity: 1 !important;
+        }
     }
 
 }
