@@ -183,10 +183,67 @@ img {
     margin-left: 5%;
 }
 
+
+#menu-list-parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75%;
+   
+}
+
+  #menu-list {
+   border-radius: 2.5rem;
+    padding: 1.67rem;
+   background: #509ae6;
+    opacity: 1;
+ } 
+
+
+  /* This will be for larger ipad screens  */
+ 
+  @media screen and (min-width: 44.5rem) {
+
+#btr_img_hamburger {
+   width: 10.72rem;
+   height: 4rem;
+}
+
+#menu-list-older-sibling {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+  #menu-list {
+    display: block;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: right;
+}
+
+#top,#bottom{
+    display: flex;
+    align-items: right;
+    justify-content: right;
+    gap: 1rem;
+} 
+
+
+#top {
+    gap: 2.5rem;
+}
+
+#bottom {
+    gap: 4.8rem;
+}
+  }
+
 #menu-item {
     opacity: 1;
     margin-top: 2rem;
     cursor: pointer;
+    gap: 1.5rem;
 }
 
 #x {
@@ -202,7 +259,7 @@ img {
 
 
 @media screen and (min-width: 48rem) and (max-width: 67rem) {
-    
+
   #nav_desktop {
     justify-content: center;  
   }
