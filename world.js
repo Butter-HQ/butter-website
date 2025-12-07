@@ -1,6 +1,54 @@
 var menu = document.getElementById("hamburger-menu")
 var hamburger = document.getElementById("hamburger-icon")
 var x = document.getElementById("x")
+//var butter_image = document.getElementById("btr_img_hamburger");
+var menuItem = document.getElementById("menu-item")
+var menuList = document.getElementById("menu-list")
+function getRand(min,max) {
+    return Math.random() * (max - min) + min;
+}
+
+function getRandRotate(index) {
+    let rand = (Math.floor(Math.random() * (40 - 10) + 10));
+    if (index % 2 != 0) {
+        return rand * -1;
+    }
+    return rand;
+}
+// let randLeft = getRand(0,20);
+// let randRight = getRand(0,14);
+// let s = randLeft.toString();
+// butter_image.style.left = s + "%";
+// butter_image.style.top =  s + "%";
+// menuItem.addEventListener("click",getRand)
+
+
+var minLeft;
+var maxLeft;
+var getLeft;
+var getTop;
+
+for (let i = 0; i < 7; i++) {
+
+var minLeft = (i*13);   
+var maxLeft = minLeft+13; 
+
+getLeft = getRand(minLeft,maxLeft);
+getTop = getRand(1,16);
+let b_img = document.createElement("img");
+b_img.src = "./listOfImages/crystalButter.png";
+b_img.style.width = "2rem";
+b_img.style.height = "2rem";
+b_img.style.top = getTop.toString() + "%";
+b_img.style.left = getLeft.toString() + "%";
+b_img.style.rotate = getRandRotate(i) + "deg";
+b_img.style.display = "flex";
+b_img.style.position = "absolute";
+menuList.appendChild(b_img);
+    
+}
+
+//butter_image.style.rotate = "10deg";
 // var butterBtn = document.querySelectorAll('.get_butter_free_btn');
 
 // function mobileColorChange() {
