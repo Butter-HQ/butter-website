@@ -200,23 +200,24 @@ img {
     width: 3rem;
 }
 
-/* 
-@media screen and (min-width: 37.5rem) and (max-width: 67rem) {
+
+@media screen and (min-width: 48rem) and (max-width: 67rem) {
+    
   #nav_desktop {
-    justify-content: center;  stops space-between from pulling apart rows 
+    justify-content: center;  
   }
 
   #nav_top_stuff,
   #bottom_stuff_from_nav {
-    width: 100%;             /allow each row to center cleanly 
+    width: 100%;            
     display: flex;
-    justify-content: center;  horizontally center contents 
-    align-items: center;      vertical centering inside row 
+    justify-content: center;
+    align-items: center;      
     margin-left: 0%;
     margin-right: 0%;
   }
 
-}        */
+}        
 
 
 

@@ -1,27 +1,27 @@
 var menu = document.getElementById("hamburger-menu")
 var hamburger = document.getElementById("hamburger-icon")
 var x = document.getElementById("x")
-var butterBtn = document.querySelectorAll('.get_butter_free_btn');
+// var butterBtn = document.querySelectorAll('.get_butter_free_btn');
 
-function mobileColorChange() {
-butterBtn.forEach((b) => {
-    b.style.setProperty("background-color", "green", "important");
-    b.style.setProperty("color", "white", "important");
-    b.style.transitionDuration = "0.1s";
-    b.addEventListener('transitionend', changeBack);
-}) 
+// function mobileColorChange() {
+// butterBtn.forEach((b) => {
+//     b.style.setProperty("background-color", "green", "important");
+//     b.style.setProperty("color", "white", "important");
+//     b.style.transitionDuration = "0.1s";
+//     b.addEventListener('transitionend', changeBack);
+// }) 
 
-}
+// }
 
-function changeBack() {
-    butterBtn.forEach((b) => {
-    b.style.setProperty("background-color", "white", "important");
-    b.style.setProperty("color", "black", "important");
-    })
-}
+// function changeBack() {
+//     butterBtn.forEach((b) => {
+//     b.style.setProperty("background-color", "white", "important");
+//     b.style.setProperty("color", "black", "important");
+//     })
+// }
 
 
-butterBtn.addEventListener("click",mobileColorChange)
+// butterBtn.addEventListener("click",mobileColorChange)
 
 function showMenu() {
     menu.style.display = "flex";
