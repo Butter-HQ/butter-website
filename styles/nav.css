@@ -177,11 +177,18 @@ img {
     opacity: 97%;
 }
 
-#btr_img_hamburger {
-    width: 16rem;
-    height: 7rem;
-    margin-left: 5%;
+#btr_img_burger {
+    display: none;
 }
+
+/* #btr_img_hamburger {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 4rem;
+    height: 4rem;
+} */
 
 
 #menu-list-parent {
@@ -204,9 +211,10 @@ img {
  
   @media screen and (min-width: 44.5rem) {
 
-#btr_img_hamburger {
-   width: 10.72rem;
-   height: 4rem;
+
+
+#menu-list-parent {
+    width: 95%;
 }
 
 #menu-list-older-sibling {
@@ -219,23 +227,29 @@ img {
     display: block;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: right;
+    justify-content: center;
 }
 
 #top,#bottom{
     display: flex;
-    align-items: right;
-    justify-content: right;
+    align-items: center;
+    justify-content: center;
     gap: 1rem;
 } 
-
+/* 
+#btr_img_hamburger {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+} */
 
 #top {
     gap: 2.5rem;
 }
 
 #bottom {
-    gap: 4.8rem;
+    gap: 4.2rem;
 }
   }
 
