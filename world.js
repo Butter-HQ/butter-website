@@ -4,6 +4,8 @@ var x = document.getElementById("x")
 //var butter_image = document.getElementById("btr_img_hamburger");
 var menuItem = document.getElementById("menu-item")
 var menuList = document.getElementById("menu-list")
+
+
 function getRand(min,max) {
     return Math.random() * (max - min) + min;
 }

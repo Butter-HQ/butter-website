@@ -200,16 +200,17 @@ img {
 }
 
   #menu-list {
-   border-radius: 2.5rem;
+   border-radius: 1.3rem;
     padding: 1.67rem;
-   background: #509ae6;
+   background: #469aee;
     opacity: 1;
+    width: 30vh;
  } 
 
 
   /* This will be for larger ipad screens  */
  
-  @media screen and (min-width: 44.5rem) {
+  @media screen and (min-width: 40rem) {
 
 
 
@@ -228,6 +229,7 @@ img {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    width: 75vw;
 }
 
 #top,#bottom{
