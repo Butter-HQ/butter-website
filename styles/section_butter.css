@@ -2,16 +2,14 @@
 
 #section_butter {
     width: 100%;
-    height: auto;
     display: block;
     text-align: center;
-    height: 20rem;
+    height: auto;
 
 }
 
 #section_butter_inner {
-    padding-top: 10%;
-    padding-bottom: 10%;
+    padding-top: 7%;
 }
 
 #section_butter_header {
@@ -31,4 +29,15 @@
         font-size: 2.2rem;
     }
 
+    #section_butter {
+        margin-bottom: -15%;
+        margin-top: 10%;
+    }
+
 }
+
+/* #footer-divider {
+    width: 100%;
+    height: 35rem;
+
+} */

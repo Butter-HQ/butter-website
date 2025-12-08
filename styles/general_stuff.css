@@ -2,6 +2,7 @@
     --bg_black: #090909;
     --bg_white: white;
     --header_clamp: clamp(2.6rem, 1.6rem + 2vw, 4.2rem);
+    --text_clamp: clamp(0.9rem, 0.7rem + 0.5vw, 1.1rem);
 }
 
  html body #enterBtn:hover,
@@ -9,8 +10,6 @@ html body .get_butter_free_btn:hover {
     background-color: #8EC6FF !important;
    
 } 
-
-
 
 body {
         max-width: 100%;
@@ -24,12 +23,12 @@ body {
 
 
 .get_butter_free_btn {
-        border-radius: 0.5rem;
-        padding: 0.6rem;
+        border-radius: 0.6rem;
+        padding: 0.9rem;
         background-color: var(--bg_black);
         color: white;
         cursor: pointer;
-        font-size: 0.87rem;
+        font-size: 1.1rem;
 }
 
 #parent_wrapper {
@@ -58,25 +57,25 @@ font-family: 'Inter', Arial, sans-serif;
      background-color: var(--bg_black);
 }
 
-   .get_butter_free_btn {
-        border-radius: 0.5rem;
-        /* outline: .6rem solid var(--bg_white); */
-        padding: 0.8rem;
-        color:  var(--bg_black);
-        background-color: var(--bg_white);
-        border: none;     
-   }
+.get_butter_free_btn {
+    color:  var(--bg_black);
+    background-color: var(--bg_white);
+    border: none;   
+}
 
- 
 }
 
 
 @media screen and (max-width: 48rem) { 
 
-  
-    .get_butter_free_btn:active {
-      background-color: #8EC6FF !important;
-    }
+.get_butter_free_btn {
+    border-radius: 0.5rem;
+    font-size: 0.87rem;
+}
+
+.get_butter_free_btn:active {
+    background-color: #8EC6FF !important;
+}
 
 }
 

@@ -1,6 +1,5 @@
 
 
-@media screen and (max-width: 48rem) { 
 
 #section_smarter {
     margin-top: 5%;
@@ -11,18 +10,19 @@
 }
 
 #section_smarter_header {
-    padding-top: 20%;
+
     text-align: center;
-    font-size: 1.65rem;
+    font-size: var(--header_clamp);
     margin: 0 auto;
     max-width: 20ch;
+    margin-bottom: 3%;
 }
 
 #section_smarter_text {
     max-width: 40ch;
     margin: 0 auto;
     padding-bottom: 4%;
-    font-size: 0.8rem;
+    font-size: var(--text_clamp);
 }
 
 #section_smarter_image {
@@ -43,6 +43,16 @@
 
 .content {
     display: none;
+}
+
+@media screen and (max-width: 48rem) { 
+
+#section_smarter_header {
+    font-size: 1.65rem;
+}
+
+#section_smarter_text {
+    font-size: 0.8rem;
 }
 
 }

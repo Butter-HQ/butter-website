@@ -31,7 +31,7 @@ nav {
   position: sticky; 
   width: 100%;
   z-index: 1000;                    /* stays above all content */
-  min-height: 5rem;
+  min-height: 3.4rem;
   /* background-color: var(--bg_white); */
   display: flex;
   flex-wrap: wrap;
@@ -57,7 +57,7 @@ img {
     margin-right: 1rem;
 }
 
-#nav_top_stuff {
+#nav_desktop_left {
     margin-left: 8%;
     /* margin-right: auto; */
     display: flex;
@@ -71,16 +71,17 @@ img {
 .a2 {
     font-size: 1.1rem;
     color: var(--bg_white);
+    padding: 0.3rem;
 }
 
 
-#nav_top_stuff a {
+#nav_desktop_left a {
     display: flex;
     align-items: center;
     padding: 0.2rem; /* adjust as needed */
 }    
 
-#bottom_stuff_from_nav {
+#nav_desktop_right {
     margin-right: 8%;
     display: flex;
     margin-left: auto;
@@ -127,7 +128,7 @@ img {
 }
 
 
-#nav_main, #nav_top_stuff, #nav_item {
+#nav_main, #nav_desktop_left, #nav_item {
     color: var(--bg_white);
 }
 
@@ -146,7 +147,7 @@ img {
         /* margin-left: 1rem; */
     }
 
-    #nav_top_stuff, #bottom_stuff_from_nav {
+    #nav_desktop_left, #nav_desktop_right {
         display: none;
     }
 
@@ -200,10 +201,11 @@ img {
 }
 
   #menu-list {
-   border-radius: 2.5rem;
+   border-radius: 1.3rem;
     padding: 1.67rem;
-   background: #509ae6;
+   background: #469aee;
     opacity: 1;
+    width: 30vh;
  } 
 
 
@@ -228,6 +230,7 @@ img {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    width: 75vw;
 }
 
 #top,#bottom{
@@ -272,14 +275,14 @@ img {
 }
 
 
-@media screen and (min-width: 48rem) and (max-width: 67rem) {
+@media screen and (min-width: 48.001rem) and (max-width: 67rem) {
 
   #nav_desktop {
     justify-content: center;  
   }
 
-  #nav_top_stuff,
-  #bottom_stuff_from_nav {
+  #nav_desktop_left,
+  #nav_desktop_right {
     width: 100%;            
     display: flex;
     justify-content: center;
@@ -290,11 +293,14 @@ img {
 
 }        
 
-
-
 @media (prefers-color-scheme: dark) {
-    #btr_image_mobile_nav {
-         color: green;
+    #nav_butter_free_btn:hover {
+    color: white;
     }
 }
  
+
+#nav_butter_free_btn {
+    border-radius: 0.5rem;
+    font-size: 0.87rem;
+}

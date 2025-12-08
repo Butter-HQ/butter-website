@@ -4,6 +4,23 @@ var x = document.getElementById("x")
 //var butter_image = document.getElementById("btr_img_hamburger");
 var menuItem = document.getElementById("menu-item")
 var menuList = document.getElementById("menu-list")
+//var nav = document.getElementById("nav_main")
+
+let mql = window.matchMedia("(width >= 48.001rem)");
+let isDesktop = mql.matches;
+//const nav_left = document.getElementById("nav_desktop_left");
+
+// if (isDesktop == true) {
+// document.addEventListener("scroll", (event) => {
+//  if (window.scrollY > 200) {
+//   nav_left.style.display = "none";
+//  } else {
+//     nav_left.style.display = "flex";
+//  }
+// });
+// }
+
+
 function getRand(min,max) {
     return Math.random() * (max - min) + min;
 }
@@ -15,13 +32,6 @@ function getRandRotate(index) {
     }
     return rand;
 }
-// let randLeft = getRand(0,20);
-// let randRight = getRand(0,14);
-// let s = randLeft.toString();
-// butter_image.style.left = s + "%";
-// butter_image.style.top =  s + "%";
-// menuItem.addEventListener("click",getRand)
-
 
 var minLeft;
 var maxLeft;
@@ -109,7 +119,6 @@ document.getElementById("email").value = "";
     alert("There was an error saving your email.")
 }
 }
-
 
 
 hamburger.addEventListener("click", showMenu)
