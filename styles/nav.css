@@ -138,7 +138,7 @@ img {
     #nav_mobile_right_content {
         display: flex;
         justify-content: space-between;
-        align-items: right;
+        align-items: center;
         gap: 1rem;
     }
 
@@ -175,7 +175,7 @@ img {
     justify-content: center;
     text-align: center;
     font-size: 1.2rem;
-    opacity: 97%;
+    opacity: 100%;
 }
 
 #btr_img_burger {
