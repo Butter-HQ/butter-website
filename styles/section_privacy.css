@@ -13,7 +13,7 @@
 #section_privacy_image {
     padding-top: 2%;
     width: 100vw;
-    height: 34rem;
+    height: 20%;
 }
 
 
@@ -21,17 +21,14 @@
 @media screen and (max-width: 48rem) { 
 
 #section_privacy_header {
-    padding-top: 10%;
     font-size: 1.65rem;
-    margin: 0 auto;
-    text-align: center;
 }
 
 
 #section_privacy_image {
     padding-top: 2%;
     width: 100vw;
-    height: 34rem;
+    height: 20%;
 }
 
 }

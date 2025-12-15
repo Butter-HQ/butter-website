@@ -5,20 +5,30 @@ var x = document.getElementById("x")
 var menuItem = document.getElementById("menu-item")
 var menuList = document.getElementById("menu-list")
 //var nav = document.getElementById("nav_main")
+var nav_main = document.getElementsByClassName("nav_main")
 
-let mql = window.matchMedia("(width >= 48.001rem)");
-let isDesktop = mql.matches;
 //const nav_left = document.getElementById("nav_desktop_left");
+//const mql = window.matchMedia("(min-width: 48.001rem)");
 
-// if (isDesktop == true) {
-// document.addEventListener("scroll", (event) => {
-//  if (window.scrollY > 200) {
-//   nav_left.style.display = "none";
-//  } else {
-//     nav_left.style.display = "flex";
-//  }
-// });
-// }
+
+
+function handleScroll() {
+//   if (!mql.matches) {
+//     return; // ignore on mobile
+//   } 
+
+  if (window.scrollY > 200) {
+   // nav_main[0].style.display = "none";
+   nav_main[0].style.transform = "translateY(-100%)";
+   nav_main[0].style.transition = "500ms";
+  } else {
+    nav_main[0].style.display = "flex";
+    nav_main[0].style.transform = "translateY(0%)";
+   nav_main[0].style.transition = "500ms";
+  }
+}
+
+document.addEventListener("scroll", handleScroll);
 
 
 function getRand(min,max) {

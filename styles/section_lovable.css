@@ -7,6 +7,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 
 
@@ -18,13 +19,18 @@
         margin-top: 15rem;
 }
 
+
+
 @media (prefers-color-scheme: dark) {
-    #section_lovable {
-        margin-top: 7%;    
-    }
+    
     #section_lovable_video {
     display: flex;
-}
+    }
+
+#section_lovable {
+        margin-top: 7%;    
+    }
+
 }
 
 
@@ -33,7 +39,7 @@
 .wrapper {
   position: relative;
   width: 20rem;     /* controls total width */
-  margin-top: 7%;
+  margin-top: 3.5%;
   margin-bottom: 1.5%;
 }
 
@@ -48,8 +54,9 @@ form {
   box-sizing: border-box;
   border-radius: 1.30rem;
   border-color: none;
-  border: none;
-  outline: none;
+  /* outline: solid 0.03rem;
+  outline-color: black */
+
 }
 
 #enterBtn {
@@ -101,6 +108,11 @@ form {
         margin: 0 auto;
         pointer-events: none;
     }
+
+#email {
+    border: none;
+}
+
     }
 
 
@@ -114,6 +126,7 @@ form {
     }
     .wrapper {
         width: 17rem;
+        margin-top: 7%;
     }
 
     #section_lovable_image {
