@@ -12,6 +12,8 @@ var nav_main = document.getElementsByClassName("nav_main")
 
 
 
+
+//Functional to show and hide nav bar after a user scroll to a certain point 
 function handleScroll() {
 //   if (!mql.matches) {
 //     return; // ignore on mobile
@@ -28,7 +30,9 @@ function handleScroll() {
   }
 }
 
-document.addEventListener("scroll", handleScroll);
+
+
+
 
 
 function getRand(min,max) {
@@ -49,10 +53,8 @@ var getLeft;
 var getTop;
 
 for (let i = 0; i < 7; i++) {
-
 var minLeft = (i*13);   
 var maxLeft = minLeft+13; 
-
 getLeft = getRand(minLeft,maxLeft);
 getTop = getRand(1,16);
 let b_img = document.createElement("img");
@@ -65,7 +67,6 @@ b_img.style.rotate = getRandRotate(i) + "deg";
 b_img.style.display = "flex";
 b_img.style.position = "absolute";
 menuList.appendChild(b_img);
-    
 }
 
 //butter_image.style.rotate = "10deg";
@@ -91,6 +92,8 @@ menuList.appendChild(b_img);
 
 // butterBtn.addEventListener("click",mobileColorChange)
 
+
+//Functionality to show and hide hamburger menu *****
 function showMenu() {
     menu.style.display = "flex";
     requestAnimationFrame(() => {
@@ -107,6 +110,10 @@ function hideMenu() {
     menu.style.display = "none";
     menu.removeEventListener('transitionend', hideMenu);
 }
+
+//***** 
+
+//*** Function to handle email sending
 
 async function docs() { //Declared async function to allow the use of await (forces program to pause until function under await is complete)
  const email = document.getElementById("email").value.trim(); //Use trim to remove the spaces between the email
@@ -130,9 +137,14 @@ document.getElementById("email").value = "";
 }
 }
 
+//*** 
 
+
+
+//**Event Listener */
 hamburger.addEventListener("click", showMenu)
 x.addEventListener("click", exit)
+document.addEventListener("scroll", handleScroll);
 document.getElementById("emailForm").addEventListener("submit", e => {
 e.preventDefault();
 docs();

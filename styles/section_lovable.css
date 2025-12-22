@@ -16,7 +16,7 @@
     justify-content: center;
 }
 
-#parent_wrapper {
+#email_section_container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -46,7 +46,7 @@
 
 
 
-.wrapper {
+.email_section_content {
   position: relative;
   width: 20rem;     /* controls total width */
   margin-top: 3.5%;
@@ -58,8 +58,8 @@ form {
 }
 
 #email {
-  width: 100%;      /* fills wrapper */
-  height: 100%;     /* matches wrapper height */
+  width: 100%;      /* fills email_section_content */
+  height: 100%;     /* matches email_section_content height */
   padding-right: 3rem; /* makes space so text doesn't overlap button */
   box-sizing: border-box;
   border-radius: 0.67rem;
@@ -82,7 +82,7 @@ input[type="email"]:focus {
   position: absolute;
   right: 0;
   width: 5rem;
-  height: 3rem;  /* now matches wrapper height */
+  height: 3rem;  /* now matches email_section_content height */
   border-radius: 0.67rem;
   background-color: var(--bg_black);
   color: var(--bg_white);
@@ -107,7 +107,7 @@ input[type="email"]:focus {
     font-size: var(--text_clamp);
     max-width: 45ch;
     margin: 0 auto;
-    margin-top: -6.7%;
+    margin-top: -3%;
 }
 
 #section_lovable_image {
@@ -147,7 +147,7 @@ input[type="email"]:focus {
     #section_lovable_text {
      font-size: 0.8rem;
     }
-    .wrapper {
+    .email_section_content {
         width: 17rem;
         margin-top: 7%;
     }
@@ -160,8 +160,9 @@ input[type="email"]:focus {
 }
 
 
-#enterBtn:hover {
+#enterBtn:hover, #footer_butter_free_btn:hover, .cta_secondary:hover, #nav_butter_free_btn:hover {
   background: linear-gradient(135deg, #32cd32, #00ff99);
   border: none;
   outline: none;
+  color: white;
 }
