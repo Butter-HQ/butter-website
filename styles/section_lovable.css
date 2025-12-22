@@ -117,7 +117,7 @@ input[type="email"]:focus {
     margin: 0 auto;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
 
     #section_lovable_video {
         display: flex;
@@ -136,7 +136,7 @@ input[type="email"]:focus {
         border: none;
     }
 
-}
+} */
 
 
 @media screen and (max-width: 48rem) { 
@@ -160,7 +160,7 @@ input[type="email"]:focus {
 }
 
 
-#enterBtn:hover, #footer_butter_free_btn:hover, .cta_secondary:hover, #nav_butter_free_btn:hover {
+#enterBtn:hover, #footer_butter_free_btn:hover, .cta_secondary:hover, #nav_butter_free_btn:hover, .footer_butter_free_btn:hover {
   background: linear-gradient(135deg, #32cd32, #00ff99);
   border: none;
   outline: none;

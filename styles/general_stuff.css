@@ -12,23 +12,23 @@ html body .get_butter_free_btn:hover {
 } 
 
 body {
-        max-width: 100%;
-        font-family: 'Inter', Arial, sans-serif;
-        overflow-x: hidden;
-        margin: 0 auto;
-        padding: 0;
-        justify-content: center;
-        font-weight: bold;
+    max-width: 100%;
+    font-family: 'Inter', Arial, sans-serif;
+    overflow-x: hidden;
+    margin: 0 auto;
+    padding: 0;
+    justify-content: center;
+    font-weight: bold;
 }
 
 
 .get_butter_free_btn {
-        border-radius: 0.6rem;
-        padding: 0.9rem;
-        background-color: var(--bg_black);
-        color: white;
-        cursor: pointer;
-        font-size: 1.1rem;
+    border-radius: 0.3rem;
+    padding: 0.9rem;
+    background-color: var(--bg_black);
+    color: white;
+    cursor: pointer;
+    font-size: 1.1rem;
 }
 
 #parent_wrapper {
@@ -37,33 +37,7 @@ body {
 
 
 
-@media (prefers-color-scheme: dark) {
-body {
- background-color:  var(--bg_black);
- color: var(--bg_white);
-font-family: 'Inter', Arial, sans-serif;
-}
 
-#parent_wrapper {
-    margin-bottom: 0%;
-}
-
-.nav_main, #nav_top_stuff {
-  /* background-color: var(--bg_black); */
-  color: var(--bg_white);
-}
-
-.nav_main {
-     background-color: var(--bg_black);
-}
-
-.get_butter_free_btn {
-    color:  var(--bg_black);
-    background-color: var(--bg_white);
-    border: none;   
-}
-
-}
 
 
 @media screen and (max-width: 48rem) { 

@@ -78,21 +78,6 @@
   background: linear-gradient(180deg, var(--bg_white) 20%, #6192F0 100%);
 }
 
-@media (prefers-color-scheme: dark) {
-  .footer-wrapper {
-    background: linear-gradient(180deg, rgba(9, 9, 9, 1) 20%, #6192F0 100%);
-  }
-
-  .footer_main,
-  .cta_secondary {
-    color: var(--bg_white);
-  }
-
-  .cta_primary {
-    background: var(--bg_white);
-    color: black;
-  }
-}
 
 /* RESPONSIVE */
 @media (max-width: 48rem) {

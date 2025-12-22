@@ -41,6 +41,11 @@
     font-size: 0.8rem;
 }
 
+#section_smarter_link:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 .content {
     display: none;
 }

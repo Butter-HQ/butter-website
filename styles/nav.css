@@ -116,11 +116,11 @@ img {
 }
 
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
 #nav_mobile_butter_free_btn, #nav_butter_free_btn {
     color: black;
 }
-}
+} */
 
 
 .nav_main {
@@ -175,7 +175,7 @@ img {
     justify-content: center;
     text-align: center;
     font-size: 1.2rem;
-    opacity: 100%;
+    opacity: 100%; 
 }
 
 #btr_img_burger {
@@ -211,7 +211,7 @@ img {
 
   /* This will be for larger ipad screens  */
  
-  @media screen and (min-width: 44.5rem) {
+@media screen and (min-width: 44.5rem) {
 
 
 
@@ -296,19 +296,13 @@ img {
   }
 
 }        
-
-@media (prefers-color-scheme: dark) {
-    #nav_butter_free_btn:hover {
-    color: white;
-    }
-}
  
 
 #nav_butter_free_btn, #nav_mobile_butter_free_btn {
-    border-radius: 0.6rem;
+    border-radius: 0.3rem;
     padding: 0.9rem;
     background-color: var(--bg_black);
-    color: white;
+    color: var(--bg_white);
     cursor: pointer;
     font-size: 1.1rem;
 }

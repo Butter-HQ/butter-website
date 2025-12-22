@@ -5,12 +5,10 @@ var x = document.getElementById("x")
 var menuItem = document.getElementById("menu-item")
 var menuList = document.getElementById("menu-list")
 //var nav = document.getElementById("nav_main")
-var nav_main = document.getElementsByClassName("nav_main")
+var nav_main = document.getElementsByClassName("nav_main");
 
 //const nav_left = document.getElementById("nav_desktop_left");
 //const mql = window.matchMedia("(min-width: 48.001rem)");
-
-
 
 
 //Functional to show and hide nav bar after a user scroll to a certain point 
@@ -33,7 +31,7 @@ function handleScroll() {
 
 
 
-
+//Generate random flakes on hamburger menu
 
 function getRand(min,max) {
     return Math.random() * (max - min) + min;
@@ -94,16 +92,30 @@ menuList.appendChild(b_img);
 
 
 //Functionality to show and hide hamburger menu *****
+
+//Freeze page while hamburger menu is open
+function disableScrolling() {
+document.body.style.overflowY = "hidden";
+}
+
+//Allow user to scroll again 
+function enableScrolling() {
+document.body.style.overflowY = "visible";
+}
+
+
 function showMenu() {
     menu.style.display = "flex";
     requestAnimationFrame(() => {
         menu.style.transform = "translate(0%)";
     })  
+    disableScrolling()
 }
 
 function exit() {
     menu.style.transform = "translate(100%)"
     menu.addEventListener('transitionend', hideMenu);
+    enableScrolling()
 }
 
 function hideMenu() {
