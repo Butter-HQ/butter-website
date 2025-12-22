@@ -59,6 +59,7 @@
 .footer-wrapper, #last-part-parent {
   width: 100vw;
   overflow-x: hidden;
+  overflow-y: hidden;
   /* background: linear-gradient(to right,
   #8EC6FF 0%,
   #6798F6 20%,
@@ -257,12 +258,12 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#090909", endC
 
  #last-part-right-older-sibling {
     justify-content: flex-end;
-     overflow-y: none;
+    overflow-y: hidden;
 }
 
 
 #crystalButter_footer {
-    width: 3rem;
-    height: 3rem;
+    width: 2.2rem;
+    height: 2.2rem;
 }
 
